@@ -26,7 +26,7 @@ import parkInn from '../../../assets/projectImages/parkInn_chennai.webp'
 import sterlingthomasgate from '../../../assets/projectImages/Thomasgate Karjat (3).jpeg'
 // the below images are not related to project name 
 import grandHyattQatar from '../../../assets/projectImages/Rosewood Qatar.jpg'
-import Sheraton from '../../../assets/projectImages/Sheraton Oman.jpg'
+import Sheraton from '../../../assets/projectImages/VIEW_06.png'
 
 const Projects = () => {
     const heroRef = useRef<HTMLDivElement | null>(null);
