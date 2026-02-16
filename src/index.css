@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+:root {
+  --color-primary: #1F4E79;
+  --color-primary-dark: #163A5F;
+  --color-secondary: #ffffff;
+  --color-accent: #6B7280;
+}
+
+* {
+  cursor: url("/public/cursor/Beetle_Icon-removebg-preview\ \(1\).png") 0 0, auto !important;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
