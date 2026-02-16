@@ -2,7 +2,6 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 // import Button from './Button'
-import BannerVideo from '../../assets/bannerVideo.mp4'
 
 const PrimaryBanner = () => {
     const containerRef = useRef<HTMLDivElement | null>(null)
@@ -27,7 +26,7 @@ const PrimaryBanner = () => {
             <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center bg-black overflow-hidden">
                 <video
                     className="absolute inset-0 w-full h-full object-cover"
-                    src={BannerVideo}
+                    src='https://res.cloudinary.com/dgm2im3i1/video/upload/v1771224742/bannerVideo_3_1_j9bmcc.mp4'
                     autoPlay
                     loop
                     muted
