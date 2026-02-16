@@ -75,11 +75,13 @@ const Navbar: React.FC = () => {
             {/* Mobile Header */}
             <div className="md:hidden flex items-center justify-between px-4 py-3">
                 {/* Logo */}
-                <img
-                    src={logo}
-                    alt="Logo"
-                    className="h-10 w-auto object-contain"
-                />
+                <Link to="/">
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        className="h-10 w-auto object-contain"
+                    />
+                </Link>
 
                 {/* Hamburger Menu */}
                 <button
