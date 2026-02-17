@@ -9,15 +9,11 @@
   --color-accent: #6B7280;
 }
 
-* {
-  cursor: url("/public/cursor/Beetle_Icon-removebg-preview\ \(1\).png") 0 0, auto !important;
-}
-
-
 body {
+  cursor: url("/public/cursor/tinyblue.png") 16 16, auto !important;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
-
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

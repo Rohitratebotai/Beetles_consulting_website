@@ -313,7 +313,7 @@ const Consultants: React.FC = () => {
                 </div>
 
                 <div className="relative max-w-7xl mx-auto text-center">
-                    <h1 ref={titleRef} className="text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                    <h1 ref={titleRef} className="text-5xl font-bold text-white mb-6 tracking-tight">
                         Our Experts
                     </h1>
                     <div className="header-underline w-24 h-1 bg-white/30 mx-auto mb-6"></div>

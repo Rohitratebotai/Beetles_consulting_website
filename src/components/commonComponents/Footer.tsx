@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+// import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
@@ -7,15 +7,15 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 py-10">
 
                 {/* Top Section */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                     {/* Contact */}
                     <div>
                         <h3 className="text-base font-semibold text-gray-900 mb-3">
                             Contact
                         </h3>
-                        <p className="text-sm mb-1">Phone: +91 xxxxx xxxxx</p>
-                        <p className="text-sm">Email: beetles@consulting.com</p>
+                        <p className="text-sm mb-1">Phone: +91 9152356519</p>
+                        <p className="text-sm">Email: ajit.thomas@beetles.consulting</p>
                     </div>
 
                     {/* Policies */}
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Social */}
-                    <div>
+                    {/* <div>
                         <h3 className="text-base font-semibold text-gray-900 mb-3">
                             Follow Us
                         </h3>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                                 <FaFacebookF size={18} />
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Divider */}

@@ -43,20 +43,20 @@ const Contact: React.FC = () => {
         {
             icon: '📧',
             title: 'Email',
-            content: 'info@beetlesconsulting.com',
-            link: 'mailto:info@beetlesconsulting.com'
+            content: 'ajit.thomas@beetles.consulting',
+            link: 'mailto:ajit.thomas@beetles.consulting'
         },
         {
             icon: '📞',
             title: 'Phone',
-            content: '+91 98765 43210',
-            link: 'tel:+919876543210'
+            content: '+91 9867886566',
+            link: 'tel:+919867886566'
         },
         {
             icon: '📍',
             title: 'Office',
-            content: 'Mumbai, Maharashtra, India',
-            link: '#'
+            content: 'SOUTH-WING, Yadav Nagar, Chandivali, Andheri East, Mumbai, Maharashtra 400072',
+            link: '#MapSection'
         },
         {
             icon: '🕐',
@@ -206,7 +206,7 @@ const Contact: React.FC = () => {
                 <div className="absolute bottom-20 right-20 w-24 h-24 border-2 border-blue-200/20 rotate-45 animate-float-delayed"></div>
 
                 <div className="relative max-w-7xl mx-auto text-center">
-                    <h1 ref={titleRef} className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight">
+                    <h1 ref={titleRef} className="text-5xl font-bold text-white mb-6 tracking-tight">
                         Contact Our<br />
                         <span className="text-blue-200">Consulting Team</span>
                     </h1>
@@ -420,21 +420,43 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Map Section */}
-                <div ref={mapRef} className="mt-20">
+                <div ref={mapRef} id="MapSection" className="mt-20">
                     <h3 className="text-3xl md:text-4xl font-bold text-[#1F4E79] text-center mb-12">
                         Visit Our Office
                     </h3>
-                    <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-                        <div className="h-96 bg-linear-to-br from-slate-200 to-slate-300 flex items-center justify-center">
-                            <div className="text-center">
-                                <div className="text-6xl mb-4">🗺️</div>
-                                <p className="text-2xl font-bold text-gray-700">Mumbai, Maharashtra, India</p>
-                                <p className="text-gray-600 mt-2">Interactive map integration</p>
-                            </div>
+
+                    <div className="bg-white rounded-3xl shadow-2xl overflow-hidden relative group">
+
+                        {/* Google Map */}
+                        <div className="h-96 w-full">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8655007722396!2d72.89280769999999!3d19.1135555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c92d5e58cdc9%3A0x94c2dec7f68a1d1b!2sBoomerang%20Building!5e0!3m2!1sen!2sin!4v1771326818458!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
+
+                        {/* Soft Bottom Overlay */}
+                        <div className="absolute bottom-0 left-0 w-full bg-linear-to-t from-black/60 to-transparent p-6">
+                            <p className="text-white text-lg font-semibold">
+                                Mumbai, Maharashtra, India
+                            </p>
+                            <a
+                                href="https://www.google.com/maps/place/Boomerang+Building/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm text-gray-200 underline hover:text-white transition"
+                            >
+                                Open in Google Maps →
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <style>{`

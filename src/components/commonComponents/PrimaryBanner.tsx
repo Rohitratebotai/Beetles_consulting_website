@@ -38,7 +38,7 @@ const PrimaryBanner = () => {
                     className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none"
                 >
                     <h1 className="hero-animate text-4xl md:text-6xl font-bold text-center mb-4 text-white drop-shadow-lg">
-                        WELCOME TO Beetles Consulting
+                        Welcome To Beetles Consulting
                     </h1>
 
                     <p className="hero-animate text-lg md:text-2xl text-center max-w-2xl mb-6 text-gray-200 drop-shadow-lg">

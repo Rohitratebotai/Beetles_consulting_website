@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { useNavigate } from "react-router-dom";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +13,7 @@ interface SplitSectionProps {
     buttonText: string;
     image: string;
     reverse?: boolean;
+    link: string; // 👈 add this
 }
 
 const SplitSection: React.FC<SplitSectionProps> = ({
@@ -19,11 +22,14 @@ const SplitSection: React.FC<SplitSectionProps> = ({
     buttonText,
     image,
     reverse = false,
+    link
 }) => {
     const sectionRef = useRef<HTMLDivElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
     const imageRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate();
+
 
     useGSAP(
         () => {
@@ -81,18 +87,18 @@ const SplitSection: React.FC<SplitSectionProps> = ({
                     </p>
 
                     <button
+                        onClick={() => navigate(link)}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                         className="relative px-8 py-4 rounded-full font-semibold text-white 
-            bg-(--color-primary) 
-            hover:bg-(--color-primary-dark)
-            transition-all duration-300 shadow-lg"
+    bg-(--color-primary) 
+    hover:bg-(--color-primary-dark)
+    transition-all duration-300 shadow-lg"
                     >
                         <span className="flex items-center gap-2">
                             {buttonText}
                             <svg
-                                className={`w-5 h-5 transition-transform duration-300 ${isHovered ? "translate-x-1" : ""
-                                    }`}
+                                className={`w-5 h-5 transition-transform duration-300 ${isHovered ? "translate-x-1" : ""}`}
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -106,6 +112,7 @@ const SplitSection: React.FC<SplitSectionProps> = ({
                             </svg>
                         </span>
                     </button>
+
                 </div>
 
                 {/* Image */}

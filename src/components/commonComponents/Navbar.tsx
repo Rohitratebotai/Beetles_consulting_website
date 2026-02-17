@@ -109,11 +109,13 @@ const Navbar: React.FC = () => {
 
                 {/* Logo in Sidebar */}
                 <div className="p-6 border-b flex justify-center">
-                    <img
-                        src={logo}
-                        alt="Logo"
-                        className="h-14 w-auto object-contain"
-                    />
+                    <Link to="/" onClick={() => setIsOpen(false)}>
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            className="h-14 w-auto object-contain"
+                        />
+                    </Link>
                 </div>
 
 

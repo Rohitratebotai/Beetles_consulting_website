@@ -12,6 +12,8 @@ interface Project {
     location: string;
     year?: string;
     workingStatus?: string;
+    indicative_Image?: string;
+    subDescription?: string;
 }
 
 // completed projects 
@@ -22,11 +24,11 @@ import radisson from '../../../assets/projectImages/radisson_muscat.jpg'
 // ongoing projects 
 import westin from '../../../assets/projectImages/Westin Vishkapatnam.jpeg'
 import grandHyattHyd from '../../../assets/projectImages/Grand Hyatt Hyderabad (1).jpeg'
-import parkInn from '../../../assets/projectImages/parkInn_chennai.webp'
-import sterlingthomasgate from '../../../assets/projectImages/Thomasgate Karjat (3).jpeg'
+import parkInn from '../../../assets/projectImages/parkinn.jpeg'
+import sterlingthomasgate from '../../../assets/projectImages/Thomasgate Karjat (1).jpeg'
 // the below images are not related to project name 
-import grandHyattQatar from '../../../assets/projectImages/Rosewood Qatar.jpg'
-import Sheraton from '../../../assets/projectImages/VIEW_06.png'
+import Sheraton2 from '../../../assets/projectImages/VIEW_07.png'
+import Sheraton from '../../../assets/projectImages/hilton.jpeg'
 
 const Projects = () => {
     const heroRef = useRef<HTMLDivElement | null>(null);
@@ -93,13 +95,14 @@ const Projects = () => {
             id: 3,
             title: "Park Inn by Radisson – 100 Keys",
             description: "A 1.1 lakh sq. ft. contemporary hotel in Chennai featuring efficient layouts, modern interiors, and thoughtfully designed guest experiences.",
+            subDescription: "Indicative image shown for representation purposes.",
             image: parkInn,
             location: "Chennai, India",
             workingStatus: "Ongoing"
         },
         {
             id: 4,
-            title: "Sterling Thomasgate Resort & Gated Villas – 100 Keys",
+            title: "Sterling Thomasgate Resort & Gated Villas – 100 Keys & 42 Luxury Villas Managed by Blusalzz Hospitality",
             description: "A 2.5 lakh sq. ft. integrated resort and gated villa community at Kashele, Karjat, blending leisure hospitality with premium villa living.",
             image: sterlingthomasgate,
             location: "Kashele, Karjat, India",
@@ -107,9 +110,10 @@ const Projects = () => {
         },
         {
             id: 5,
-            title: "72-Key Boutique Hotel – Tirupati",
-            description: "A 70,000 sq. ft. boutique hospitality project in Tirupati, currently under operator signing, designed to offer curated luxury and personalized guest experiences.",
-            image: grandHyattQatar,
+            title: "60-Key Boutique Hotel – Tirupati",
+            description: "A 60,000 sq. ft. boutique hospitality project in Tirupati, currently under operator signing, designed to offer curated luxury and personalized guest experiences.",
+            subDescription: "Indicative image used for conceptual presentation. Actual project visuals are subject to final approvals and branding guidelines.",
+            image: Sheraton2,
             location: "Tirupati, India",
             workingStatus: "Operator Signing in Progress"
         },
@@ -117,6 +121,7 @@ const Projects = () => {
             id: 6,
             title: "200-Key 4-Star Hotel – MHAPE, Navi Mumbai",
             description: "A 2 lakh sq. ft. upscale 4-star hotel development in MHAPE, Navi Mumbai, with operator signing in progress, positioned to serve business and transit travelers.",
+            subDescription: "Indicative image shown for representation purposes.",
             image: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop",
             location: "MHAPE, Navi Mumbai, India",
             workingStatus: "Operator Signing in Progress"
@@ -127,17 +132,18 @@ const Projects = () => {
             description: "A large-scale urban resort project set in the scenic landscape of Igatpuri, Nasik, combining hospitality and villa living with operator signing in progress.",
             image: Sheraton,
             location: "Igatpuri, Nasik, India",
-            workingStatus: "Operator Signing in Progress"
+            workingStatus: "Hillton Garden Inn Resort and Villas Managed by Blusalzz Hospitality"
         },
         {
             id: 8,
-            title: "Luxury Villa Development – Alibaug",
+            title: "Gated Luxury Villas Development – Alibaug",
             description: "A 50,000 sq. ft. gated development comprising 10 luxury villas in Alibaug, designed for exclusive coastal living and premium lifestyle experiences.",
             image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
             location: "Alibaug, India",
             workingStatus: "Ongoing"
         }
     ];
+
 
     const priorExperience = [
         "Grand Hyatt Oman",
@@ -490,6 +496,7 @@ const Projects = () => {
                             />
                         </div>
 
+
                         <div className="p-8">
                             <div className="mb-4">
                                 <span
@@ -525,13 +532,22 @@ const Projects = () => {
                                     {selectedProject.description}
                                 </p>
                             </div>
+
+                            <div className=''>
+                                {
+                                    selectedProject?.subDescription && (
+                                        <div className="bg-opacity-50 text-gray-400 text-sm pt-6 rounded-b-lg">
+                                            {selectedProject.subDescription}
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
             )}
         </div>
     );
-
 };
 
 export default Projects;
