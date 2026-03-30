@@ -1,6 +1,8 @@
 import "./App.css";
 import Footer from "./components/commonComponents/Footer";
 import Navbar from "./components/commonComponents/Navbar";
+import ScrollToTop from "./components/commonComponents/ScrollToTop";
+import ScrollToTopButton from "./components/commonComponents/ScrollToTopButton";
 import Consultants from "./components/pages/consultant/Consultant";
 import Contact from "./components/pages/contact/Contact";
 import Home from "./components/pages/home/Home";
@@ -12,7 +14,8 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
+      <ScrollToTopButton />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

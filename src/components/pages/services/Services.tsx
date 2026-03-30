@@ -20,15 +20,15 @@ const Services = () => {
     const cardsContainerRef = useRef<HTMLDivElement | null>(null);
 
 
-    const consultingServices = [
-        { name: "Grand Opening", icon: "🎊" },
-        { name: "Concept, Schematic", icon: "🌺" },
-        { name: "Design Development", icon: "📐" },
-        { name: "Commissioning, Handover", icon: "🔧" },
-        { name: "Construction Documentation", icon: "👷" },
-        { name: "Completion, Training", icon: "👥" },
-        { name: "Construction & Procurement", icon: "🏗️" }
-    ];
+    // const consultingServices = [
+    //     { name: "Grand Opening", icon: "🎊" },
+    //     { name: "Concept, Schematic", icon: "🌺" },
+    //     { name: "Design Development", icon: "📐" },
+    //     { name: "Commissioning, Handover", icon: "🔧" },
+    //     { name: "Construction Documentation", icon: "👷" },
+    //     { name: "Completion, Training", icon: "👥" },
+    //     { name: "Construction & Procurement", icon: "🏗️" }
+    // ];
 
     const mainServices = [
         {
@@ -232,16 +232,15 @@ const Services = () => {
 
 
     return (
-        <div className="min-h-screen" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="min-h-screen  mt-28" style={{ backgroundColor: '#f9fafb' }}>
             {/* Hero */}
             <div ref={heroRef} style={{ background: 'linear-gradient(135deg, #1F4E79 0%, #163A5F 100%)' }} className="text-white py-24 px-6">
                 <div className="max-w-5xl mx-auto text-center">
                     <h1 ref={heroTitleRef} className="text-5xl font-bold mb-6">Our Consulting Services</h1>
                     <p ref={heroSubtitleRef} className="text-xl opacity-90 mb-8">
-                        We provide expert consulting across project control, client representation, hospitality advisory,
-                        and brand strategy to ensure your success from start to finish.
+                        Beetles Consulting is a specialist hospitality advisory & project control firm experienced in delivering end-to-end solutions; from feasibility, design management & brand engagement to consultant onboarding, execution governance, procurement, testing, commissioning & handover. We function as an extension of the Client’s office, safeguarding Time, Cost, Quality, Sustainability & Commercial success across the entire asset lifecycle.
                     </p>
-                    <div ref={heroTagsRef} className="flex flex-wrap justify-center gap-3 mt-8">
+                    {/* <div ref={heroTagsRef} className="flex flex-wrap justify-center gap-3 mt-8">
                         {consultingServices.map((service, index) => (
                             <div
                                 key={index}
@@ -251,7 +250,7 @@ const Services = () => {
                                 <span className="text-sm font-semibold">{service.name}</span>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -302,7 +301,7 @@ const Services = () => {
 
             {/* Modal */}
             {selectedService !== null && (
-                <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50" onClick={() => setSelectedService(null)}>
+                <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-9999" onClick={() => setSelectedService(null)}>
                     <div ref={modalRef} className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden" onClick={(e) => e.stopPropagation()}>
                         <div className="relative h-64">
                             <img

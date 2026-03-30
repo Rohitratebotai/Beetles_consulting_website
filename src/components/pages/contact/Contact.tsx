@@ -190,7 +190,7 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-slate-100">
+        <div className="min-h-screen  mt-28 bg-linear-to-br from-slate-50 via-blue-50 to-slate-100">
             {/* Hero Section */}
             <div ref={heroRef} className="relative overflow-hidden bg-linear-to-br from-[#1F4E79] via-[#163A5F] to-[#1F4E79] py-24 px-6">
                 {/* Animated Background Pattern */}

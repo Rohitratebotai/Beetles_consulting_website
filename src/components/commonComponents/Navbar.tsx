@@ -32,9 +32,9 @@ const Navbar: React.FC = () => {
     );
 
     return (
-        <header className=" w-full bg-white shadow">
+        <header className="fixed top-0 z-9999 w-full bg-white shadow">
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center justify-center gap-6  py-4">
+            <div className="hidden sm:px-10 lg:px-0  md:flex items-center justify-center gap-6  py-4">
                 {/* Left Navigation */}
                 <div ref={LeftlinkRef} className="flex items-center space-x-8 ">
                     {leftLinks.map((link) => (
@@ -71,7 +71,6 @@ const Navbar: React.FC = () => {
                 </div>
             </div>
 
-            {/* Mobile Header */}
             {/* Mobile Header */}
             <div className="md:hidden flex items-center justify-between px-4 py-3">
                 {/* Logo */}

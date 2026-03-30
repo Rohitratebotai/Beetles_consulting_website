@@ -351,7 +351,7 @@ const Projects = () => {
     });
 
     return (
-        <div className="min-h-screen" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="min-h-screen mt-28" style={{ backgroundColor: '#f9fafb' }}>
             {/* Hero Section */}
             <div ref={heroRef} style={{ background: 'linear-gradient(135deg, #1F4E79 0%, #163A5F 100%)' }} className="text-white py-20 px-6 text-center">
                 <h1 ref={heroTitleRef} className="text-5xl font-bold mb-4">Our Projects</h1>
@@ -470,7 +470,7 @@ const Projects = () => {
             {/* Modal */}
             {isModalOpen && selectedProject && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 bg-opacity-75"
+                    className="fixed inset-0 z-9999 flex items-center justify-center p-4 bg-black/70 bg-opacity-75"
                     onClick={closeModal}
                 >
                     <div

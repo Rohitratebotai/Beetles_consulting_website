@@ -3,7 +3,7 @@ import ReviewsSection from "../../Homepage_components/ReviewSection"
 import SplitSection from "../../Homepage_components/SplitSection"
 import WhyChooseUs from "../../Homepage_components/WhyChooseUs"
 import heroImg from '../../../assets/HeroImage.jpg'
-import HorizontalImageSlider from "../../Homepage_components/HorizontalImageSlider"
+// import HorizontalImageSlider from "../../Homepage_components/HorizontalImageSlider"
 
 const Home = () => {
     return (
@@ -19,8 +19,7 @@ const Home = () => {
                 />
                 <WhyChooseUs />
                 <ReviewsSection />
-                <HorizontalImageSlider
-                />
+                {/* <HorizontalImageSlider/> */}
             </div>
         </section>
     )

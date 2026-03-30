@@ -301,7 +301,7 @@ const Consultants: React.FC = () => {
     }, [selectedConsultant]);
 
     return (
-        <div className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-slate-100">
+        <div className="min-h-screen mt-28 bg-linear-to-br from-slate-50 via-blue-50 to-slate-100">
             {/* Header Section with Animated Background */}
             <div ref={headerRef} className="relative overflow-hidden bg-[#1F4E79] py-20 px-6">
                 {/* Animated Background Pattern */}
@@ -396,11 +396,11 @@ const Consultants: React.FC = () => {
             {selectedConsultant && (
                 <div
                     ref={modalRef}
-                    className="fixed inset-0 bg-black/60 backdrop-blur-md z-50 flex items-center justify-center p-4"
+                    className="fixed inset-0 bg-black/60 backdrop-blur-md z-9999 flex items-center justify-center p-4"
                     onClick={() => setSelectedConsultant(null)}
                 >
                     <div
-                        className="modal-content bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+                        className="modal-content bg-white rounded-3xl z-9999 max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Modal Header */}

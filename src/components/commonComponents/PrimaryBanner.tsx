@@ -23,7 +23,7 @@ const PrimaryBanner = () => {
 
     return (
         <section>
-            <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center bg-black overflow-hidden">
+            <section className="relative mt-16  md:mt-20 lg:mt-28 h-[60vh] md:h-[70vh] lg:h-[84vh] flex items-center justify-center bg-black overflow-hidden">
                 <video
                     className="absolute inset-0 w-full h-full object-cover"
                     src='https://res.cloudinary.com/dgm2im3i1/video/upload/v1771224742/bannerVideo_3_1_j9bmcc.mp4'
@@ -42,8 +42,7 @@ const PrimaryBanner = () => {
                     </h1>
 
                     <p className="hero-animate text-lg md:text-2xl text-center max-w-2xl mb-6 text-gray-200 drop-shadow-lg">
-                        Empowering organizations with smart strategies, digital transformation,
-                        and sustainable business growth.
+                        Hospitality Advisory & Project Control Specialists
                     </p>
 
                     {/* <div className="hero-animate pointer-events-auto">
