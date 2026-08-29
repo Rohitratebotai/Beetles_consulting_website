@@ -33,12 +33,12 @@ const Services = () => {
     const mainServices = [
         {
             title: "Project Controls & Client Representation",
-            subtitle: "Concept to Testing & Commissioning, and Handover Time-Cost-Quality Governance from Team Assembly to Final Handover.",
+            subtitle: "Beetles Consulting acts as an extension of the Client’s office, providing integrated project controls and delivery oversight from concept through testing, commissioning, and handover. We assist in assembling the right consultant and contractor teams, establishing execution frameworks, managing schedules, costs, quality, risks, and stakeholder coordination, while ensuring projects are delivered efficiently, commercially responsibly, and in alignment with brand and operational objectives.",
             image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
             points: [
+                "Concept to Testing & Commissioning, and Handover Time-Cost-Quality Governance from Team Assembly to Final Handover.",
                 "From pre-qualification and selection of the most suitable consultants and PMC to testing, commissioning, and handover, Beetles provides comprehensive project control and delivery oversight.",
                 "Core Coverage:",
-                "Overseeing completion, handover to operations, and post-opening support during DLP.",
                 "Structuring of project execution framework, procurement strategy, and contract administration.",
                 "Assistance in pre-qualification, evaluation, and appointment of consultants, PMC, contractors, and vendors.",
                 "Development of baseline schedules, cost plans, and control systems.",
@@ -47,65 +47,91 @@ const Services = () => {
                 "Managing the PMC on behalf of the Client and mitigating risks; ensuring Brand Compliance, Quality, Standardization, Sustainability, Energy Optimization, etc.",
                 "Facilitating coordination among multiple stakeholders during construction.",
                 "Testing & Commissioning supervision, documentation, and witness checks.",
+                "Overseeing completion, handover to operations, and post-opening support during DLP.",
                 "Significant continuous contribution from our experience in fast-track completion of projects and making Energy Efficient Hospitality Landmarks."
             ]
         },
         {
             title: "Design & Technical Services (DTS) - Brand Representation & Coordination",
-            subtitle: "Representing Brand Standards, Ensuring Design Integration, and Enabling Seamless Delivery.",
+            subtitle: "Beetles represents hospitality brand standards and technical expectations throughout the design and execution lifecycle. Acting as a bridge between ownership, consultants, contractors, and operators, we help ensure seamless design integration, technical compliance, coordinated decision-making, and smoother project delivery aligned with operational and brand requirements.",
             image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
             points: [
+                "Representing Brand Standards, Ensuring Design Integration, and Enabling Seamless Delivery.",
                 "Beetles acts as the regional technical representative of international or domestic hospitality brands, ensuring their design philosophy and technical standards are maintained from concept through completion.",
-                "Continuous reporting, risk flagging, and dashboard management.",
                 "Representation of brand design and technical standards at every project stage.",
                 "Coordination between client, consultants, and brand reviewers.",
                 "Participation in all design and coordination meetings to ensure brand alignment.",
                 "Assistance in selection and pre-qualification of consultants for architecture, interiors, MEP, structure, facility planning, sustainability, etc.",
                 "Review and comment on drawings, material selections, specifications, and mock-ups.",
                 "Resolution of technical issues during design and construction.",
+                "Continuous reporting, risk flagging, and dashboard management.",
                 "Overlapped sequential handover support to help operator mobilize, train, and open smoothly."
             ]
         },
         {
             title: "Site Feasibility, Positioning & Site Advisory",
-            subtitle: "Evaluating the Site, Defining the Product, and Validating the Investment.",
+            subtitle: "Beetles assists clients in evaluating the suitability, potential, positioning, and commercial viability of hospitality and mixed-use developments. Our advisory approach helps define the right product, scale, market positioning, customer targeting, and development strategy based on location dynamics, investment objectives, operational practicality, and long-term asset value creation.",
             image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
             points: [
-                "Preparing financial feasibility and investor brief.",
-                "Suitability of the site — access, topography, regulations, utilities, surroundings.",
-                "Potential and rationale for hospitality development.",
-                "Defining the most appropriate hospitality product type — resort, business, religious, city, serviced apartments, wellness, amusement, casino, etc.",
-                "Advising on size, scale, and positioning aligned with demand drivers.",
-                "Suggesting likely brand fit, ADR, occupancy, IRR and ROI benchmarks.",
-                "Issuing preliminary concept note, area program, and risk-return assessment."
+                "Suitability analysis of the site including access, visibility, connectivity, topography, regulations, utilities, climate, surroundings and development constraints. ",
+                "Assessing the potential and rationale for hospitality or mixed-use development based on market dynamics and demand drivers.",
+                "Defining the most appropriate hospitality product typology including resort, business hotel, luxury, upper upscale, religious destination, wellness retreat, serviced apartments, amusement-led destination, casino resort, branded residences and mixed-use hospitality. ",
+                "Advising on project size, scale, room mix, public areas, F&B strategy, wellness, banqueting, retail integration and positioning aligned with market opportunity and investment objectives. ",
+                "Preliminary evaluation of likely ADR, occupancy, GOP, IRR, ROI and overall commercial feasibility benchmarks. ",
+                "Preparing financial feasibility inputs, development strategy notes and investor briefs.  ",
+                "Advising on development approach, phasing possibilities, operational suitability and long-term asset enhancement potential."
+            ]
+        },
+        {
+            title: "Brand Strategy & Engagement",
+            subtitle: "Beetles supports clients in identifying, evaluating, engaging, and negotiating with suitable hospitality operators and franchise brands. From brand shortlisting and operator discussions to commercial evaluations and agreement negotiations, we help ownership secure strategically aligned and commercially balanced hotel management or franchise partnerships.",
+            image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800&h=600&fit=crop",
+            points: [
+                "Recommending suitable hotel brands, operators, and franchise options based on project positioning, market fit, commercial viability, and ownership objectives.",
+                "Identifying the suitable Hospitality Operator Brand & Structuring Hotel Management / Franchise Alliances.",
+                "Coordinating exchange of project information, concept presentations, development briefs, and commercial expectations with potential operators.",
+                "Coordinating discussions between ownership, legal advisors, operators, consultants, and financial stakeholders during negotiation and finalization stages.",
+                "Beetles supports clients in identifying, evaluating, engaging, and negotiating with suitable hospitality operators and franchise brands to secure strategically aligned and commercially balanced partnerships.",
+                "Identifying and shortlisting appropriate international, regional, or domestic hospitality brands aligned with the project vision.",
+                "Initiating and managing structured engagement with shortlisted operators and franchise brands.",
+                "Advising on operator selection strategy considering brand strength, operational capability, technical suitability, market reach, and long-term asset value creation.",
+                "Supporting negotiations for Hotel Management Agreements (HMA), Franchise Agreements, Technical Services Agreements (TSA), and related commercial arrangements.",
+                "Assisting in aligning brand standards and operator expectations with project budgets, timelines, operational goals, and development realities.",
+                "Providing strategic advisory support during LOIs, term sheets, operator onboarding, and agreement finalization processes.",
+                "Reviewing operational obligations, performance clauses, area requirements, pre-opening obligations, and owner protections from a project and commercial perspective.",
+                "Assisting ownership in securing commercially balanced and strategically suitable long-term brand alliances."
             ]
         },
         {
             title: "Property Improvement Plan (PIP) & Operational Quality Audit",
-            subtitle: "Auditing Performance, Repositioning Assets, and Defining Upgrade Strategies.",
+            subtitle: "Beetles undertakes technical, operational, and asset-quality audits for existing hospitality properties to identify deficiencies, repositioning opportunities, upgrade requirements, and operational improvement strategies. Our structured review process helps ownership plan refurbishments, enhance market competitiveness, and align assets with evolving brand and guest expectations.",
             image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
             points: [
-                "Development of actionable upgrade roadmaps with prioritization.",
+                "Auditing Performance, Repositioning Assets, and Defining Upgrade Strategies.",
                 "Property audit – technical, architectural, and MEP review.",
                 "Performance audit – operational efficiency, service standards, maintenance.",
                 "Benchmarking against brand and market expectations.",
                 "Repositioning or rebranding recommendations.",
                 "Macro and micro budgeting for upgrade or refurbishment programs.",
+                "Development of actionable upgrade roadmaps with prioritization.",
                 "Reporting via structured PIP document with photos, deficiency logs, and estimated costs."
             ]
         },
         {
             title: "FF&E & OS&E Procurement Advisory & Specialized Procurement Solutions",
-            subtitle: "Professional sourcing, procurement management, and logistics coordination for FF&E and OS&E — ensuring brand compliance, cost control, and timely delivery.",
+            subtitle: "Beetles provides integrated FF&E and OS&E procurement advisory services covering sourcing strategy, vendor management, technical coordination, commercial negotiations, logistics tracking, and delivery oversight. Working closely with project and design teams, we help ensure timely procurement, cost efficiency, design consistency, and compliance with operator standards.",
             image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
             points: [
+                "Professional sourcing, procurement management, and logistics coordination for FF&E and OS&E — ensuring brand compliance, cost control, and timely delivery.",
+                "A dedicated division under Beetles Consulting focusing on professional sourcing, procurement management, and logistics coordination for FF&E and OS&E — ensuring brand compliance, cost control, and timely delivery.",
                 "Beetles Consulting's FF&E & OS&E Procurement Division provides comprehensive management of all furniture, fixtures, and operating equipment for hospitality projects. Working in synergy with the Project Control and Design Management teams, we deliver a fully integrated procurement solution that preserves design intent, meets operator standards, and ensures commercial efficiency for clients.",
                 "Integration with project schedules to support handover timelines.",
                 "Preparation of detailed FF&E/OS&E lists and technical specifications.",
                 "Vendor pre-qualification, bid management, and procurement negotiation.",
                 "Coordination with designers, project teams, and logistics partners.",
                 "Factory inspections, sample approvals, and shipment tracking.",
-                "Budget monitoring and progressive procurement reporting."
+                "Budget monitoring and progressive procurement reporting.",
+                "Integration with project schedules to support handover timelines."
             ]
         }
     ];
@@ -173,7 +199,6 @@ const Services = () => {
         );
     }, { dependencies: [mainServices], scope: cardsContainerRef });
 
-
     // Enhanced CTA Animation
     useGSAP(() => {
         if (!ctaRef.current) return;
@@ -229,7 +254,6 @@ const Services = () => {
         },
         { dependencies: [selectedService] }
     );
-
 
     return (
         <div className="min-h-screen  mt-28" style={{ backgroundColor: '#f9fafb' }}>
@@ -287,12 +311,15 @@ const Services = () => {
                                 <h3 className="text-xl font-bold mb-3" style={{ color: '#1F4E79' }}>
                                     {service.title}
                                 </h3>
-                                <p className="text-sm font-semibold mb-4" style={{ color: '#6B7280' }}>
-                                    {service.subtitle}
+                                <p className="text-sm font-semibold mb-4 text-justify" style={{ color: '#6B7280' }}>
+                                    {service.subtitle.slice(0, 150)}{" "}
+                                    <span
+                                        className="font-bold hover:underline cursor-pointer"
+                                        style={{ color: '#1F4E79' }}
+                                    >
+                                        Read More...
+                                    </span>
                                 </p>
-                                <button className="text-sm font-bold hover:underline" style={{ color: '#1F4E79' }}>
-                                    View Details →
-                                </button>
                             </div>
                         </div>
                     ))}

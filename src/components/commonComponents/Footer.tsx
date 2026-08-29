@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assets/beetles.jpg'
+import logo from '../../assets/logobgremove.png'
 
 const Footer: React.FC = () => {
     return (
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
 
                     {/* Company Name */}
                     <div>
-                       <img src={logo} alt="" />
+                        <img className="w-24 h-32 object-cover" src={logo} alt="" />
                     </div>
 
                     {/* Quick Links */}
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
                             className="text-sm"
                             style={{ color: "var(--color-accent)" }}
                         >
-                            ajit.thomas@beetles.consulting
+                            ajit.thomas@beetles.in
                         </p>
                     </div>
 

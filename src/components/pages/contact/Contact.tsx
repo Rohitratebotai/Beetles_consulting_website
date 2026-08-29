@@ -43,14 +43,14 @@ const Contact: React.FC = () => {
         {
             icon: '📧',
             title: 'Email',
-            content: 'ajit.thomas@beetles.consulting',
-            link: 'mailto:ajit.thomas@beetles.consulting'
+            content: 'ajit.thomas@beetles.in',
+            link: 'mailto:ajit.thomas@beetles.in'
         },
         {
             icon: '📞',
             title: 'Phone',
-            content: '+91 9867886566',
-            link: 'tel:+919867886566'
+            content: '+91 9152356519',
+            link: 'tel:+919152356519'
         },
         {
             icon: '📍',

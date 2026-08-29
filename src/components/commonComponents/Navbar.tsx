@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../assets/beetles.jpg'
+import logo from '../../assets/logo.jpeg'
 import { Link } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center justify-center mx-12">
                     <div className="text-center">
                         <Link to="/">
-                            <img src={logo} alt="Logo" />
+                            <img className='w-24 h-28 object-cover' src={logo} alt="Logo" />
                         </Link>
                     </div>
                 </div>
@@ -72,13 +72,13 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Header */}
-            <div className="md:hidden flex items-center justify-between px-4 py-3">
+            <div className="md:hidden flex items-center justify-between px-4 py-1.5">
                 {/* Logo */}
                 <Link to="/">
                     <img
                         src={logo}
                         alt="Logo"
-                        className="h-10 w-auto object-contain"
+                        className="h-20 w-20 object-contain"
                     />
                 </Link>
 
@@ -107,12 +107,12 @@ const Navbar: React.FC = () => {
                 </button>
 
                 {/* Logo in Sidebar */}
-                <div className="p-6 border-b flex justify-center">
+                <div className="p-3 border-b flex justify-center">
                     <Link to="/" onClick={() => setIsOpen(false)}>
                         <img
                             src={logo}
                             alt="Logo"
-                            className="h-14 w-auto object-contain"
+                            className="h-20 w-16 object-contain"
                         />
                     </Link>
                 </div>
